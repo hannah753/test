@@ -1,0 +1,1414 @@
+extends layout 
+block content
+  .responsive-header
+    .mh-head.first.Sticky
+      span.mh-btns-left
+        a(href='#menu')
+          i.fa.fa-align-justify
+      span.mh-text
+        a(href='newsfeed.html' title='')
+          img(src='images/logo2.png' alt='')
+      span.mh-btns-right
+        a.fa.fa-sliders(href='#shoppingbag')
+    .mh-head.second
+      form.mh-form
+        input(placeholder='search')
+        a.fa.fa-search(href='#/')
+    nav#menu.res-menu
+      ul
+        li
+          span Home
+          ul
+            li
+              a(href='index-2.html' title='') Home Social
+            li
+              a(href='index2.html' title='') Home Social 2
+            li
+              a(href='index-company.html' title='') Home Company
+            li
+              a(href='landing.html' title='') Login page
+            li
+              a(href='logout.html' title='') Logout Page
+            li
+              a(href='newsfeed.html' title='') news feed
+        li
+          span Time Line
+          ul
+            li
+              a(href='time-line.html' title='') timeline
+            li
+              a(href='timeline-friends.html' title='') timeline friends
+            li
+              a(href='timeline-groups.html' title='') timeline groups
+            li
+              a(href='timeline-pages.html' title='') timeline pages
+            li
+              a(href='timeline-photos.html' title='') timeline photos
+            li
+              a(href='timeline-videos.html' title='') timeline videos
+            li
+              a(href='fav-page.html' title='') favourit page
+            li
+              a(href='groups.html' title='') groups page
+            li
+              a(href='page-likers.html' title='') Likes page
+            li
+              a(href='people-nearby.html' title='') people nearby
+        li
+          span Account Setting
+          ul
+            li
+              a(href='create-fav-page.html' title='') create fav page
+            li
+              a(href='edit-account-setting.html' title='') edit account setting
+            li
+              a(href='edit-interest.html' title='') edit-interest
+            li
+              a(href='edit-password.html' title='') edit-password
+            li
+              a(href='edit-profile-basic.html' title='') edit profile basics
+            li
+              a(href='edit-work-eductation.html' title='') edit work educations
+            li
+              a(href='messages.html' title='') message box
+            li
+              a(href='inbox.html' title='') Inbox
+            li
+              a(href='notifications.html' title='') notifications page
+        li
+          span forum
+          ul
+            li
+              a(href='forum.html' title='') Forum Page
+            li
+              a(href='forums-category.html' title='') Fourm Category
+            li
+              a(href='forum-open-topic.html' title='') Forum Open Topic
+            li
+              a(href='forum-create-topic.html' title='') Forum Create Topic
+        li
+          span Our Shop
+          ul
+            li
+              a(href='shop.html' title='') Shop Products
+            li
+              a(href='shop-masonry.html' title='') Shop Masonry Products
+            li
+              a(href='shop-single.html' title='') Shop Detail Page
+            li
+              a(href='shop-cart.html' title='') Shop Product Cart
+            li
+              a(href='shop-checkout.html' title='') Product Checkout
+        li
+          span Our Blog
+          ul
+            li
+              a(href='blog-grid-wo-sidebar.html' title='') Our Blog
+            li
+              a(href='blog-grid-right-sidebar.html' title='') Blog with R-Sidebar
+            li
+              a(href='blog-grid-left-sidebar.html' title='') Blog with L-Sidebar
+            li
+              a(href='blog-masonry.html' title='') Blog Masonry Style
+            li
+              a(href='blog-list-wo-sidebar.html' title='') Blog List Style
+            li
+              a(href='blog-list-right-sidebar.html' title='') Blog List with R-Sidebar
+            li
+              a(href='blog-list-left-sidebar.html' title='') Blog List with L-Sidebar
+            li
+              a(href='blog-detail.html' title='') Blog Post Detail
+        li
+          span Portfolio
+          ul
+            li
+              a(href='portfolio-2colm.html' title='') Portfolio 2col
+            li
+              a(href='portfolio-3colm.html' title='') Portfolio 3col
+            li
+              a(href='portfolio-4colm.html' title='') Portfolio 4col
+        li
+          span Support &amp; Help
+          ul
+            li
+              a(href='support-and-help.html' title='') Support &amp; Help
+            li
+              a(href='support-and-help-detail.html' title='') Support &amp; Help Detail
+            li
+              a(href='support-and-help-search-result.html' title='') Support &amp; Help Search Result
+        li
+          span More pages
+          ul
+            li
+              a(href='careers.html' title='') Careers
+            li
+              a(href='career-detail.html' title='') Career Detail
+            li
+              a(href='404.html' title='') 404 error page
+            li
+              a(href='404-2.html' title='') 404 Style2
+            li
+              a(href='faq.html' title='') faq&apos;s page
+            li
+              a(href='insights.html' title='') insights
+            li
+              a(href='knowledge-base.html' title='') knowledge base
+        li
+          a(href='about.html' title='') about
+        li
+          a(href='about-company.html' title='') About Us2
+        li
+          a(href='contact.html' title='') contact
+        li
+          a(href='contact-branches.html' title='') Contact Us2
+        li
+          a(href='widgets.html' title='') Widgts
+    nav#shoppingbag
+      div
+        div
+          form(method='post')
+            .setting-row
+              span use night mode
+              input#nightmode(type='checkbox')
+              label(for='nightmode' data-on-label='ON' data-off-label='OFF')
+            .setting-row
+              span Notifications
+              input#switch2(type='checkbox')
+              label(for='switch2' data-on-label='ON' data-off-label='OFF')
+            .setting-row
+              span Notification sound
+              input#switch3(type='checkbox')
+              label(for='switch3' data-on-label='ON' data-off-label='OFF')
+            .setting-row
+              span My profile
+              input#switch4(type='checkbox')
+              label(for='switch4' data-on-label='ON' data-off-label='OFF')
+            .setting-row
+              span Show profile
+              input#switch5(type='checkbox')
+              label(for='switch5' data-on-label='ON' data-off-label='OFF')
+          h4.panel-title Account Setting
+          form(method='post')
+            .setting-row
+              span Sub users
+              input#switch6(type='checkbox')
+              label(for='switch6' data-on-label='ON' data-off-label='OFF')
+            .setting-row
+              span personal account
+              input#switch7(type='checkbox')
+              label(for='switch7' data-on-label='ON' data-off-label='OFF')
+            .setting-row
+              span Business account
+              input#switch8(type='checkbox')
+              label(for='switch8' data-on-label='ON' data-off-label='OFF')
+            .setting-row
+              span Show me online
+              input#switch9(type='checkbox')
+              label(for='switch9' data-on-label='ON' data-off-label='OFF')
+            .setting-row
+              span Delete history
+              input#switch10(type='checkbox')
+              label(for='switch10' data-on-label='ON' data-off-label='OFF')
+            .setting-row
+              span Expose author name
+              input#switch11(type='checkbox')
+              label(for='switch11' data-on-label='ON' data-off-label='OFF')
+  // responsive header
+  .topbar.stick
+    .logo
+      a(title='' href='newsfeed.html')
+        img(src='images/logo.png' alt='')
+    .top-area
+      ul.main-menu
+        li
+          a(href='#' title='') Home
+          ul
+            li
+              a(href='index-2.html' title='') Home Social
+            li
+              a(href='index2.html' title='') Home Social 2
+            li
+              a(href='index-company.html' title='') Home Company
+            li
+              a(href='landing.html' title='') Login page
+            li
+              a(href='logout.html' title='') Logout Page
+            li
+              a(href='newsfeed.html' title='') news feed
+        li
+          a(href='#' title='') timeline
+          ul
+            li
+              a(href='time-line.html' title='') timeline
+            li
+              a(href='timeline-friends.html' title='') timeline friends
+            li
+              a(href='timeline-groups.html' title='') timeline groups
+            li
+              a(href='timeline-pages.html' title='') timeline pages
+            li
+              a(href='timeline-photos.html' title='') timeline photos
+            li
+              a(href='timeline-videos.html' title='') timeline videos
+            li
+              a(href='fav-page.html' title='') favourit page
+            li
+              a(href='groups.html' title='') groups page
+            li
+              a(href='page-likers.html' title='') Likes page
+            li
+              a(href='people-nearby.html' title='') people nearby
+        li
+          a(href='#' title='') account settings
+          ul
+            li
+              a(href='create-fav-page.html' title='') create fav page
+            li
+              a(href='edit-account-setting.html' title='') edit account setting
+            li
+              a(href='edit-interest.html' title='') edit-interest
+            li
+              a(href='edit-password.html' title='') edit-password
+            li
+              a(href='edit-profile-basic.html' title='') edit profile basics
+            li
+              a(href='edit-work-eductation.html' title='') edit work educations
+            li
+              a(href='messages.html' title='') message box
+            li
+              a(href='inbox.html' title='') Inbox
+            li
+              a(href='notifications.html' title='') notifications page
+        li
+          a(href='#' title='') more pages
+          ul
+            li
+              a(href='404.html' title='') 404 error page
+            li
+              a(href='about.html' title='') about
+            li
+              a(href='contact.html' title='') contact
+            li
+              a(href='faq.html' title='') faq&apos;s page
+            li
+              a(href='insights.html' title='') insights
+            li
+              a(href='knowledge-base.html' title='') knowledge base
+            li
+              a(href='widgets.html' title='') Widgts
+      ul.setting-area
+        li
+          a(href='#' title='Home' data-ripple='')
+            i.ti-search
+          .searched
+            form.form-search(method='post')
+              input(type='text' placeholder='Search Friend')
+              button(data-ripple='')
+                i.ti-search
+        li
+          a(href='newsfeed.html' title='Home' data-ripple='')
+            i.ti-home
+        li
+          a(href='#' title='Notification' data-ripple='')
+            i.ti-bell
+            span 20
+          .dropdowns
+            span 4 New Notifications
+            ul.drops-menu
+              li
+                a(href='notifications.html' title='')
+                  img(src='images/resources/thumb-1.jpg' alt='')
+                  .mesg-meta
+                    h6 sarah Loren
+                    span Hi, how r u dear ...?
+                    i 2 min ago
+                span.tag.green New
+              li
+                a(href='notifications.html' title='')
+                  img(src='images/resources/thumb-2.jpg' alt='')
+                  .mesg-meta
+                    h6 Jhon doe
+                    span Hi, how r u dear ...?
+                    i 2 min ago
+                span.tag.red Reply
+              li
+                a(href='notifications.html' title='')
+                  img(src='images/resources/thumb-3.jpg' alt='')
+                  .mesg-meta
+                    h6 Andrew
+                    span Hi, how r u dear ...?
+                    i 2 min ago
+                span.tag.blue Unseen
+              li
+                a(href='notifications.html' title='')
+                  img(src='images/resources/thumb-4.jpg' alt='')
+                  .mesg-meta
+                    h6 Tom cruse
+                    span Hi, how r u dear ...?
+                    i 2 min ago
+                span.tag New
+              li
+                a(href='notifications.html' title='')
+                  img(src='images/resources/thumb-5.jpg' alt='')
+                  .mesg-meta
+                    h6 Amy
+                    span Hi, how r u dear ...?
+                    i 2 min ago
+                span.tag New
+            a.more-mesg(href='notifications.html' title='') view more
+        li
+          a(href='#' title='Messages' data-ripple='')
+            i.ti-comment
+            span 12
+          .dropdowns
+            span 5 New Messages
+            ul.drops-menu
+              li
+                a(href='notifications.html' title='')
+                  img(src='images/resources/thumb-1.jpg' alt='')
+                  .mesg-meta
+                    h6 sarah Loren
+                    span Hi, how r u dear ...?
+                    i 2 min ago
+                span.tag.green New
+              li
+                a(href='notifications.html' title='')
+                  img(src='images/resources/thumb-2.jpg' alt='')
+                  .mesg-meta
+                    h6 Jhon doe
+                    span Hi, how r u dear ...?
+                    i 2 min ago
+                span.tag.red Reply
+              li
+                a(href='notifications.html' title='')
+                  img(src='images/resources/thumb-3.jpg' alt='')
+                  .mesg-meta
+                    h6 Andrew
+                    span Hi, how r u dear ...?
+                    i 2 min ago
+                span.tag.blue Unseen
+              li
+                a(href='notifications.html' title='')
+                  img(src='images/resources/thumb-4.jpg' alt='')
+                  .mesg-meta
+                    h6 Tom cruse
+                    span Hi, how r u dear ...?
+                    i 2 min ago
+                span.tag New
+              li
+                a(href='notifications.html' title='')
+                  img(src='images/resources/thumb-5.jpg' alt='')
+                  .mesg-meta
+                    h6 Amy
+                    span Hi, how r u dear ...?
+                    i 2 min ago
+                span.tag New
+            a.more-mesg(href='messages.html' title='') view more
+        li
+          a(href='#' title='Languages' data-ripple='')
+            i.fa.fa-globe
+          .dropdowns.languages
+            a(href='#' title='')
+              i.ti-check
+              | English
+            a(href='#' title='') Arabic
+            a(href='#' title='') Dutch
+            a(href='#' title='') French
+      .user-img
+        img(src='images/resources/admin.jpg' alt='')
+        span.status.f-online
+        .user-setting
+          a(href='#' title='')
+            span.status.f-online
+            | online
+          a(href='#' title='')
+            span.status.f-away
+            | away
+          a(href='#' title='')
+            span.status.f-off
+            | offline
+          a(href='#' title='')
+            i.ti-user
+            |  view profile
+          a(href='#' title='')
+            i.ti-pencil-alt
+            | edit profile
+          a(href='#' title='')
+            i.ti-target
+            | activity log
+          a(href='#' title='')
+            i.ti-settings
+            | account setting
+          a(href='#' title='')
+            i.ti-power-off
+            | log out
+      span.ti-menu.main-menu(data-ripple='')
+  // topbar
+  section
+    .gap.gray-bg
+      .container-fluid
+        .row
+          .col-lg-12
+            #page-contents.row
+              .col-lg-3
+                aside.sidebar.static
+                  .widget
+                    h4.widget-title Shortcuts
+                    ul.naves
+                      li
+                        i.ti-clipboard
+                        a(href='newsfeed.html' title='') News feed
+                      li
+                        i.ti-mouse-alt
+                        a(href='inbox.html' title='') Inbox
+                      li
+                        i.ti-files
+                        a(href='fav-page.html' title='') My pages
+                      li
+                        i.ti-user
+                        a(href='timeline-friends.html' title='') friends
+                      li
+                        i.ti-image
+                        a(href='timeline-photos.html' title='') images
+                      li
+                        i.ti-video-camera
+                        a(href='timeline-videos.html' title='') videos
+                      li
+                        i.ti-comments-smiley
+                        a(href='messages.html' title='') Messages
+                      li
+                        i.ti-bell
+                        a(href='notifications.html' title='') Notifications
+                      li
+                        i.ti-share
+                        a(href='people-nearby.html' title='') People Nearby
+                      li
+                        i.fa.fa-bar-chart-o
+                        a(href='insights.html' title='') insights
+                      li
+                        i.ti-power-off
+                        a(href='landing.html' title='') Logout
+                  // Shortcuts
+                  .widget
+                    h4.widget-title Recent Activity
+                    ul.activitiez
+                      li
+                        .activity-meta
+                          i 10 hours Ago
+                          span
+                            a(href='#' title='') Commented on Video posted 
+                          h6
+                            | by 
+                            a(href='time-line.html') black demon.
+                      li
+                        .activity-meta
+                          i 30 Days Ago
+                          span
+                            a(href='#' title='') Posted your status. &ldquo;Hello guys, how are you?&rdquo;
+                      li
+                        .activity-meta
+                          i 2 Years Ago
+                          span
+                            a(href='#' title='') Share a video on her timeline.
+                          h6
+                            | &quot;
+                            a(href='#') you are so funny mr.been.
+                            | &quot;
+                  // recent activites
+                  .widget.stick-widget
+                    h4.widget-title Who&apos;s follownig
+                    ul.followers
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar2.jpg' alt='')
+                        .friend-meta
+                          h4
+                            a(href='time-line.html' title='') Kelly Bill
+                          a.underline(href='#' title='') Add Friend
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar4.jpg' alt='')
+                        .friend-meta
+                          h4
+                            a(href='time-line.html' title='') Issabel
+                          a.underline(href='#' title='') Add Friend
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar6.jpg' alt='')
+                        .friend-meta
+                          h4
+                            a(href='time-line.html' title='') Andrew
+                          a.underline(href='#' title='') Add Friend
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar8.jpg' alt='')
+                        .friend-meta
+                          h4
+                            a(href='time-line.html' title='') Sophia
+                          a.underline(href='#' title='') Add Friend
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar3.jpg' alt='')
+                        .friend-meta
+                          h4
+                            a(href='time-line.html' title='') Allen
+                          a.underline(href='#' title='') Add Friend
+                  // who's following
+              // sidebar
+              .col-lg-6
+                .central-meta
+                  .new-postbox
+                    figure
+                      img(src='images/resources/admin2.jpg' alt='')
+                    .newpst-input
+                      form(action="/create" enctype="multipart/form-data" method="POST")
+                        textarea(name="content" rows='2' placeholder='write something')
+                        .attachments
+                          ul
+                            li
+                              i.fa.fa-music
+                              label.fileContainer
+                                input(type='file')
+                            li
+                              i.fa.fa-image
+                              label.fileContainer
+                                input(name="coverUrl" type='file')
+                            li
+                              i.fa.fa-video-camera
+                              label.fileContainer
+                                input(type='file')
+                            li
+                              i.fa.fa-camera
+                              label.fileContainer
+                                input(type='file')
+                            li
+                              button(type='submit' value="Create") Post
+                // add post new box
+                .loadMore
+                  .central-meta.item
+                    .user-post
+                      .friend-info
+                        figure
+                          img(src='images/resources/friend-avatar10.jpg' alt='')
+                        .friend-name
+                          ins
+                            a(href='time-line.html' title='') Janice Griffith
+                          span published: june,2 2018 19:PM
+                        .post-meta
+                          img(src='images/resources/user-post.jpg' alt='')
+                          .we-video-info
+                            ul
+                              li
+                                span.views(data-toggle='tooltip' title='views')
+                                  i.fa.fa-eye
+                                  ins 1.2k
+                              li
+                                span.comment(data-toggle='tooltip' title='Comments')
+                                  i.fa.fa-comments-o
+                                  ins 52
+                              li
+                                span.like(data-toggle='tooltip' title='like')
+                                  i.ti-heart
+                                  ins 2.2k
+                              li
+                                span.dislike(data-toggle='tooltip' title='dislike')
+                                  i.ti-heart-broken
+                                  ins 200
+                              li.social-media
+                                .menu
+                                  .btn.trigger
+                                    i.fa.fa-share-alt
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-html5
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-facebook
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-google-plus
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-twitter
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-css3
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-instagram
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-dribbble
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-pinterest
+                          .description
+                            p
+                              | World&apos;s most beautiful car in Curabitur 
+                              a(href='#' title='') #test drive booking !
+                              |  the most beatuiful car available in america and the saudia arabia, you can book your test drive by our official website
+                      .coment-area
+                        ul.we-comet
+                          li
+                            .comet-avatar
+                              img(src='images/resources/comet-1.jpg' alt='')
+                            .we-comment
+                              .coment-head
+                                h5
+                                  a(href='time-line.html' title='') Jason borne
+                                span 1 year ago
+                                a.we-reply(href='#' title='Reply')
+                                  i.fa.fa-reply
+                              p
+                                | we are working for the dance and sing songs. this car is very awesome for the youngster. please vote this car and like our post
+                            ul
+                              li
+                                .comet-avatar
+                                  img(src='images/resources/comet-2.jpg' alt='')
+                                .we-comment
+                                  .coment-head
+                                    h5
+                                      a(href='time-line.html' title='') alexendra dadrio
+                                    span 1 month ago
+                                    a.we-reply(href='#' title='Reply')
+                                      i.fa.fa-reply
+                                  p
+                                    | yes, really very awesome car i see the features of this car in the official website of 
+                                    a(href='#' title='') #Mercedes-Benz
+                                    |  and really impressed :-)
+                              li
+                                .comet-avatar
+                                  img(src='images/resources/comet-3.jpg' alt='')
+                                .we-comment
+                                  .coment-head
+                                    h5
+                                      a(href='time-line.html' title='') Olivia
+                                    span 16 days ago
+                                    a.we-reply(href='#' title='Reply')
+                                      i.fa.fa-reply
+                                  p
+                                    | i like lexus cars, lexus cars are most beautiful with the awesome features, but this car is really outstanding than lexus
+                          li
+                            .comet-avatar
+                              img(src='images/resources/comet-1.jpg' alt='')
+                            .we-comment
+                              .coment-head
+                                h5
+                                  a(href='time-line.html' title='') Donald Trump
+                                span 1 week ago
+                                a.we-reply(href='#' title='Reply')
+                                  i.fa.fa-reply
+                              p
+                                | we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel
+                                i.em.em-smiley
+                          li
+                            a.showmore.underline(href='#' title='') more comments
+                          li.post-comment
+                            .comet-avatar
+                              img(src='images/resources/comet-1.jpg' alt='')
+                            .post-comt-box
+                              form(method='post')
+                                textarea(placeholder='Post your comment')
+                                .add-smiles
+                                  span.em.em-expressionless(title='add icon')
+                                .smiles-bunch
+                                  i.em.em---1
+                                  i.em.em-smiley
+                                  i.em.em-anguished
+                                  i.em.em-laughing
+                                  i.em.em-angry
+                                  i.em.em-astonished
+                                  i.em.em-blush
+                                  i.em.em-disappointed
+                                  i.em.em-worried
+                                  i.em.em-kissing_heart
+                                  i.em.em-rage
+                                  i.em.em-stuck_out_tongue
+                                button(type='submit')
+                  .central-meta.item
+                    .user-post
+                      .friend-info
+                        figure
+                          img(src='images/resources/nearly1.jpg' alt='')
+                        .friend-name
+                          ins
+                            a(href='time-line.html' title='') Sara Grey
+                          span published: june,2 2018 19:PM
+                        .post-meta
+                          iframe(src='https://player.vimeo.com/video/15232052' height='315' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='')
+                          .we-video-info
+                            ul
+                              li
+                                span.views(data-toggle='tooltip' title='views')
+                                  i.fa.fa-eye
+                                  ins 1.2k
+                              li
+                                span.comment(data-toggle='tooltip' title='Comments')
+                                  i.fa.fa-comments-o
+                                  ins 52
+                              li
+                                span.like(data-toggle='tooltip' title='like')
+                                  i.ti-heart
+                                  ins 2.2k
+                              li
+                                span.dislike(data-toggle='tooltip' title='dislike')
+                                  i.ti-heart-broken
+                                  ins 200
+                              li.social-media
+                                .menu
+                                  .btn.trigger
+                                    i.fa.fa-share-alt
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-html5
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-facebook
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-google-plus
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-twitter
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-css3
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-instagram
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-dribbble
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-pinterest
+                          .description
+                            p
+                              | Lonely Cat Enjoying in Summer Curabitur 
+                              a(href='#' title='') #mypage
+                              |  ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
+                      .coment-area
+                        ul.we-comet
+                          li
+                            .comet-avatar
+                              img(src='images/resources/comet-1.jpg' alt='')
+                            .we-comment
+                              .coment-head
+                                h5
+                                  a(href='time-line.html' title='') Jason borne
+                                span 1 year ago
+                                a.we-reply(href='#' title='Reply')
+                                  i.fa.fa-reply
+                              p
+                                | we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel
+                          li
+                            .comet-avatar
+                              img(src='images/resources/comet-2.jpg' alt='')
+                            .we-comment
+                              .coment-head
+                                h5
+                                  a(href='time-line.html' title='') Sophia
+                                span 1 week ago
+                                a.we-reply(href='#' title='Reply')
+                                  i.fa.fa-reply
+                              p
+                                | we are working for the dance and sing songs. this video is very awesome for the youngster.
+                                i.em.em-smiley
+                          li
+                            a.showmore.underline(href='#' title='') more comments
+                          li.post-comment
+                            .comet-avatar
+                              img(src='images/resources/comet-2.jpg' alt='')
+                            .post-comt-box
+                              form(method='post')
+                                textarea(placeholder='Post your comment')
+                                .add-smiles
+                                  span.em.em-expressionless(title='add icon')
+                                .smiles-bunch
+                                  i.em.em---1
+                                  i.em.em-smiley
+                                  i.em.em-anguished
+                                  i.em.em-laughing
+                                  i.em.em-angry
+                                  i.em.em-astonished
+                                  i.em.em-blush
+                                  i.em.em-disappointed
+                                  i.em.em-worried
+                                  i.em.em-kissing_heart
+                                  i.em.em-rage
+                                  i.em.em-stuck_out_tongue
+                                button(type='submit')
+                  .central-meta.item
+                    .user-post
+                      .friend-info
+                        figure
+                          img(src='images/resources/nearly6.jpg' alt='')
+                        .friend-name
+                          ins
+                            a(href='time-line.html' title='') Sophia
+                          span published: january,5 2018 19:PM
+                        .post-meta
+                          .post-map
+                            .nearby-map
+                              #map-canvas
+                          // near by map
+                          .we-video-info
+                            ul
+                              li
+                                span.views(data-toggle='tooltip' title='views')
+                                  i.fa.fa-eye
+                                  ins 1.2k
+                              li
+                                span.comment(data-toggle='tooltip' title='Comments')
+                                  i.fa.fa-comments-o
+                                  ins 52
+                              li
+                                span.like(data-toggle='tooltip' title='like')
+                                  i.ti-heart
+                                  ins 2.2k
+                              li
+                                span.dislike(data-toggle='tooltip' title='dislike')
+                                  i.ti-heart-broken
+                                  ins 200
+                              li.social-media
+                                .menu
+                                  .btn.trigger
+                                    i.fa.fa-share-alt
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-html5
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-facebook
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-google-plus
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-twitter
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-css3
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-instagram
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-dribbble
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-pinterest
+                          .description
+                            p
+                              | Curabitur Lonely Cat Enjoying in Summer 
+                              a(href='#' title='') #mypage
+                              |  ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc,
+                      .coment-area
+                        ul.we-comet
+                          li
+                            .comet-avatar
+                              img(src='images/resources/comet-1.jpg' alt='')
+                            .we-comment
+                              .coment-head
+                                h5
+                                  a(href='time-line.html' title='') Jason borne
+                                span 1 year ago
+                                a.we-reply(href='#' title='Reply')
+                                  i.fa.fa-reply
+                              p
+                                | we are working for the dance and sing songs. this video is very awesome for the youngster. please vote this video and like our channel
+                          li
+                            .comet-avatar
+                              img(src='images/resources/comet-2.jpg' alt='')
+                            .we-comment
+                              .coment-head
+                                h5
+                                  a(href='time-line.html' title='') Sophia
+                                span 1 week ago
+                                a.we-reply(href='#' title='Reply')
+                                  i.fa.fa-reply
+                              p
+                                | we are working for the dance and sing songs. this video is very awesome for the youngster.
+                                i.em.em-smiley
+                          li
+                            a.showmore.underline(href='#' title='') more comments
+                          li.post-comment
+                            .comet-avatar
+                              img(src='images/resources/comet-2.jpg' alt='')
+                            .post-comt-box
+                              form(method='post')
+                                textarea(placeholder='Post your comment')
+                                .add-smiles
+                                  span.em.em-expressionless(title='add icon')
+                                .smiles-bunch
+                                  i.em.em---1
+                                  i.em.em-smiley
+                                  i.em.em-anguished
+                                  i.em.em-laughing
+                                  i.em.em-angry
+                                  i.em.em-astonished
+                                  i.em.em-blush
+                                  i.em.em-disappointed
+                                  i.em.em-worried
+                                  i.em.em-kissing_heart
+                                  i.em.em-rage
+                                  i.em.em-stuck_out_tongue
+                                button(type='submit')
+                  .central-meta.item
+                    .user-post
+                      .friend-info
+                        figure
+                          img(alt='' src='images/resources/friend-avatar10.jpg')
+                        .friend-name
+                          ins
+                            a(title='' href='time-line.html') Janice Griffith
+                          span published: june,2 2018 19:PM
+                        .description
+                          p
+                            | Curabitur World&apos;s most beautiful car in 
+                            a(title='' href='#') #test drive booking !
+                            |  the most beatuiful car available in america and the saudia arabia, you can book your test drive by our official website
+                        .post-meta
+                          .linked-image.align-left
+                            a(title='' href='#')
+                              img(alt='' src='images/resources/page1.jpg')
+                          .detail
+                            span Love Maid - ChillGroves
+                            p
+                              | Lorem ipsum dolor sit amet, consectetur ipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+                            a(title='' href='#') www.sample.com
+                          .we-video-info
+                            ul
+                              li
+                                span.views(data-toggle='tooltip' title='views')
+                                  i.fa.fa-eye
+                                  ins 1.2k
+                              li
+                                span.comment(data-toggle='tooltip' title='Comments')
+                                  i.fa.fa-comments-o
+                                  ins 52
+                              li
+                                span.like(data-toggle='tooltip' title='like')
+                                  i.ti-heart
+                                  ins 2.2k
+                              li
+                                span.dislike(data-toggle='tooltip' title='dislike')
+                                  i.ti-heart-broken
+                                  ins 200
+                              li.social-media
+                                .menu
+                                  .btn.trigger
+                                    i.fa.fa-share-alt
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-html5
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-facebook
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-google-plus
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-twitter
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-css3
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-instagram
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-dribbble
+                                  .rotater
+                                    .btn.btn-icon
+                                      a(href='#' title='')
+                                        i.fa.fa-pinterest
+              // centerl meta
+              .col-lg-3
+                aside.sidebar.static
+                  .widget
+                    h4.widget-title Your page
+                    .your-page
+                      figure
+                        a(href='#' title='')
+                          img(src='images/resources/friend-avatar9.jpg' alt='')
+                      .page-meta
+                        a.underline(href='#' title='') My page
+                        span
+                          i.ti-comment
+                          a(href='insight.html' title='')
+                            | Messages 
+                            em 9
+                        span
+                          i.ti-bell
+                          a(href='insight.html' title='')
+                            | Notifications 
+                            em 2
+                      .page-likes
+                        ul.nav.nav-tabs.likes-btn
+                          li.nav-item
+                            a.active(href='#link1' data-toggle='tab') likes
+                          li.nav-item
+                            a(href='#link2' data-toggle='tab') views
+                        // Tab panes
+                        .tab-content
+                          #link1.tab-pane.active.fade.show
+                            span
+                              i.ti-heart
+                              | 884
+                            a(href='#' title='weekly-likes') 35 new likes this week
+                            .users-thumb-list
+                              a(href='#' title='Anderw' data-toggle='tooltip')
+                                img(src='images/resources/userlist-1.jpg' alt='')
+                              a(href='#' title='frank' data-toggle='tooltip')
+                                img(src='images/resources/userlist-2.jpg' alt='')
+                              a(href='#' title='Sara' data-toggle='tooltip')
+                                img(src='images/resources/userlist-3.jpg' alt='')
+                              a(href='#' title='Amy' data-toggle='tooltip')
+                                img(src='images/resources/userlist-4.jpg' alt='')
+                              a(href='#' title='Ema' data-toggle='tooltip')
+                                img(src='images/resources/userlist-5.jpg' alt='')
+                              a(href='#' title='Sophie' data-toggle='tooltip')
+                                img(src='images/resources/userlist-6.jpg' alt='')
+                              a(href='#' title='Maria' data-toggle='tooltip')
+                                img(src='images/resources/userlist-7.jpg' alt='')
+                          #link2.tab-pane.fade
+                            span
+                              i.ti-eye
+                              | 440
+                            a(href='#' title='weekly-likes') 440 new views this week
+                            .users-thumb-list
+                              a(href='#' title='Anderw' data-toggle='tooltip')
+                                img(src='images/resources/userlist-1.jpg' alt='')
+                              a(href='#' title='frank' data-toggle='tooltip')
+                                img(src='images/resources/userlist-2.jpg' alt='')
+                              a(href='#' title='Sara' data-toggle='tooltip')
+                                img(src='images/resources/userlist-3.jpg' alt='')
+                              a(href='#' title='Amy' data-toggle='tooltip')
+                                img(src='images/resources/userlist-4.jpg' alt='')
+                              a(href='#' title='Ema' data-toggle='tooltip')
+                                img(src='images/resources/userlist-5.jpg' alt='')
+                              a(href='#' title='Sophie' data-toggle='tooltip')
+                                img(src='images/resources/userlist-6.jpg' alt='')
+                              a(href='#' title='Maria' data-toggle='tooltip')
+                                img(src='images/resources/userlist-7.jpg' alt='')
+                  // page like widget
+                  .widget
+                    .banner.medium-opacity.bluesh
+                      .bg-image(style='background-image: url(images/resources/baner-widgetbg.jpg)')
+                      .baner-top
+                        span
+                          img(alt='' src='images/book-icon.png')
+                        i.fa.fa-ellipsis-h
+                      .banermeta
+                        p
+                          | create your own favourit page.
+                        span like them all
+                        a(data-ripple='' title='' href='#') start now!
+                  .widget.friend-list.stick-widget
+                    h4.widget-title Friends
+                    #searchDir
+                    ul#people-list.friendz-list
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar.jpg' alt='')
+                          span.status.f-online
+                        .friendz-meta
+                          a(href='time-line.html') bucky barnes
+                          i
+                            a.__cf_email__(href='https://wpkixx.com/cdn-cgi/l/email-protection' data-cfemail='a0d7c9ced4c5d2d3cfccc4c5d2e0c7cdc1c9cc8ec3cfcd') [email&nbsp;protected]
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar2.jpg' alt='')
+                          span.status.f-away
+                        .friendz-meta
+                          a(href='time-line.html') Sarah Loren
+                          i
+                            a.__cf_email__(href='https://wpkixx.com/cdn-cgi/l/email-protection' data-cfemail='b4d6d5c6dad1c7f4d3d9d5ddd89ad7dbd9') [email&nbsp;protected]
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar3.jpg' alt='')
+                          span.status.f-off
+                        .friendz-meta
+                          a(href='time-line.html') jason borne
+                          i
+                            a.__cf_email__(href='https://wpkixx.com/cdn-cgi/l/email-protection' data-cfemail='1d777c6e72737f5d7a707c7471337e7270') [email&nbsp;protected]
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar4.jpg' alt='')
+                          span.status.f-off
+                        .friendz-meta
+                          a(href='time-line.html') Cameron diaz
+                          i
+                            a.__cf_email__(href='https://wpkixx.com/cdn-cgi/l/email-protection' data-cfemail='bed4dfcdd1d0dcfed9d3dfd7d290ddd1d3') [email&nbsp;protected]
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar5.jpg' alt='')
+                          span.status.f-online
+                        .friendz-meta
+                          a(href='time-line.html') daniel warber
+                          i
+                            a.__cf_email__(href='https://wpkixx.com/cdn-cgi/l/email-protection' data-cfemail='553f34263a3b37153238343c397b363a38') [email&nbsp;protected]
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar6.jpg' alt='')
+                          span.status.f-away
+                        .friendz-meta
+                          a(href='time-line.html') andrew
+                          i
+                            a.__cf_email__(href='https://wpkixx.com/cdn-cgi/l/email-protection' data-cfemail='5933382a36373b193e34383035773a3634') [email&nbsp;protected]
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar7.jpg' alt='')
+                          span.status.f-off
+                        .friendz-meta
+                          a(href='time-line.html') amy watson
+                          i
+                            a.__cf_email__(href='https://wpkixx.com/cdn-cgi/l/email-protection' data-cfemail='5933382a36373b193e34383035773a3634') [email&nbsp;protected]
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar5.jpg' alt='')
+                          span.status.f-online
+                        .friendz-meta
+                          a(href='time-line.html') daniel warber
+                          i
+                            a.__cf_email__(href='https://wpkixx.com/cdn-cgi/l/email-protection' data-cfemail='dbb1baa8b4b5b99bbcb6bab2b7f5b8b4b6') [email&nbsp;protected]
+                      li
+                        figure
+                          img(src='images/resources/friend-avatar2.jpg' alt='')
+                          span.status.f-away
+                        .friendz-meta
+                          a(href='time-line.html') Sarah Loren
+                          i
+                            a.__cf_email__(href='https://wpkixx.com/cdn-cgi/l/email-protection' data-cfemail='2644475448435566414b474f4a0845494b') [email&nbsp;protected]
+                    .chat-box
+                      .chat-head
+                        span.status.f-online
+                        h6 Bucky Barnes
+                        .more
+                          span
+                            i.ti-more-alt
+                          span.close-mesage
+                            i.ti-close
+                      .chat-list
+                        ul
+                          li.me
+                            .chat-thumb
+                              img(src='images/resources/chatlist1.jpg' alt='')
+                            .notification-event
+                              span.chat-message-item
+                                | Hi James! Please remember to buy the food for tomorrow! I&rsquo;m gonna be handling the gifts and Jake&rsquo;s gonna get the drinks
+                              span.notification-date
+                                time.entry-date.updated(datetime='2004-07-24T18:18') Yesterday at 8:10pm
+                          li.you
+                            .chat-thumb
+                              img(src='images/resources/chatlist2.jpg' alt='')
+                            .notification-event
+                              span.chat-message-item
+                                | Hi James! Please remember to buy the food for tomorrow! I&rsquo;m gonna be handling the gifts and Jake&rsquo;s gonna get the drinks
+                              span.notification-date
+                                time.entry-date.updated(datetime='2004-07-24T18:18') Yesterday at 8:10pm
+                          li.me
+                            .chat-thumb
+                              img(src='images/resources/chatlist1.jpg' alt='')
+                            .notification-event
+                              span.chat-message-item
+                                | Hi James! Please remember to buy the food for tomorrow! I&rsquo;m gonna be handling the gifts and Jake&rsquo;s gonna get the drinks
+                              span.notification-date
+                                time.entry-date.updated(datetime='2004-07-24T18:18') Yesterday at 8:10pm
+                        form.text-box
+                          textarea(placeholder='Post enter to post...')
+                          .add-smiles
+                            span.em.em-expressionless(title='add icon')
+                          .smiles-bunch
+                            i.em.em---1
+                            i.em.em-smiley
+                            i.em.em-anguished
+                            i.em.em-laughing
+                            i.em.em-angry
+                            i.em.em-astonished
+                            i.em.em-blush
+                            i.em.em-disappointed
+                            i.em.em-worried
+                            i.em.em-kissing_heart
+                            i.em.em-rage
+                            i.em.em-stuck_out_tongue
+                          button(type='submit')
+                  // friends list sidebar
+              // sidebar
+  footer
+    .container
+      .row
+        .col-lg-4.col-md-4
+          .widget
+            .foot-logo
+              .logo
+                a(href='index-2.html' title='')
+                  img(src='images/logo.png' alt='')
+              p
+                | The trio took this simple idea and built it into the world&rsquo;s leading carpooling platform.
+            ul.location
+              li
+                i.ti-map-alt
+                p 33 new montgomery st.750 san francisco, CA USA 94105.
+              li
+                i.ti-mobile
+                p +1-56-346 345
+        .col-lg-2.col-md-4
+          .widget
+            .widget-title
+              h4 follow
+            ul.list-style
+              li
+                i.fa.fa-facebook-square
+                a(href='https://web.facebook.com/shopcircut/' title='') facebook
+              li
+                i.fa.fa-twitter-square
+                a(href='https://twitter.com/login?lang=en' title='') twitter
+              li
+                i.fa.fa-instagram
+                a(href='https://www.instagram.com/?hl=en' title='') instagram
+              li
+                i.fa.fa-google-plus-square
+                a(href='https://plus.google.com/discover' title='') Google+
+              li
+                i.fa.fa-pinterest-square
+                a(href='https://www.pinterest.com/' title='') Pintrest
+        .col-lg-2.col-md-4
+          .widget
+            .widget-title
+              h4 Navigate
+            ul.list-style
+              li
+                a(href='about.html' title='') about us
+              li
+                a(href='contact.html' title='') contact us
+              li
+                a(href='terms.html' title='') terms &amp; Conditions
+              li
+                a(href='#' title='') RSS syndication
+              li
+                a(href='sitemap.html' title='') Sitemap
+        .col-lg-2.col-md-4
+          .widget
+            .widget-title
+              h4 useful links
+            ul.list-style
+              li
+                a(href='#' title='') leasing
+              li
+                a(href='#' title='') submit route
+              li
+                a(href='#' title='') how does it work?
+              li
+                a(href='#' title='') agent listings
+              li
+                a(href='#' title='') view All
+        .col-lg-2.col-md-4
+          .widget
+            .widget-title
+              h4 download apps
+            ul.colla-apps
+              li
+                a(href='https://play.google.com/store?hl=en' title='')
+                  i.fa.fa-android
+                  | android
+              li
+                a(href='https://www.apple.com/lae/ios/app-store/' title='')
+                  i.ti-apple
+                  | iPhone
+              li
+                a(href='https://www.microsoft.com/store/apps' title='')
+                  i.fa.fa-windows
+                  | Windows
+  // footer
+  .bottombar
+    .container
+      .row
+        .col-md-12
+          span.copyright
+            a(target='_blank' href='https://www.templateshub.net') Templates Hub
+          i
+            img(src='images/credit-cards.png' alt='')
+  .side-panel
+    h4.panel-title General Setting
+    form(method='post')
+      .setting-row
+        span use night mode
+        input#nightmode1(type='checkbox')
+        label(for='nightmode1' data-on-label='ON' data-off-label='OFF')
+      .setting-row
+        span Notifications
+        input#switch22(type='checkbox')
+        label(for='switch22' data-on-label='ON' data-off-label='OFF')
+      .setting-row
+        span Notification sound
+        input#switch33(type='checkbox')
+        label(for='switch33' data-on-label='ON' data-off-label='OFF')
+      .setting-row
+        span My profile
+        input#switch44(type='checkbox')
+        label(for='switch44' data-on-label='ON' data-off-label='OFF')
+      .setting-row
+        span Show profile
+        input#switch55(type='checkbox')
+        label(for='switch55' data-on-label='ON' data-off-label='OFF')
+    h4.panel-title Account Setting
+    form(method='post')
+      .setting-row
+        span Sub users
+        input#switch66(type='checkbox')
+        label(for='switch66' data-on-label='ON' data-off-label='OFF')
+      .setting-row
+        span personal account
+        input#switch77(type='checkbox')
+        label(for='switch77' data-on-label='ON' data-off-label='OFF')
+      .setting-row
+        span Business account
+        input#switch88(type='checkbox')
+        label(for='switch88' data-on-label='ON' data-off-label='OFF')
+      .setting-row
+        span Show me online
+        input#switch99(type='checkbox')
+        label(for='switch99' data-on-label='ON' data-off-label='OFF')
+      .setting-row
+        span Delete history
+        input#switch101(type='checkbox')
+        label(for='switch101' data-on-label='ON' data-off-label='OFF')
+      .setting-row
+        span Expose author name
+        input#switch111(type='checkbox')
+        label(for='switch111' data-on-label='ON' data-off-label='OFF')
+
