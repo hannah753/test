@@ -16,6 +16,8 @@ console.log(models);
 //assoc
 models.Post.belongsTo(models.User);
 models.User.hasMany(models.Post);
+models.Comment.belongsTo(models.User);
+models.Post.hasMany(models.Comment);
 
 module.exports=models;
 module.exports=sequelizeConnection;
