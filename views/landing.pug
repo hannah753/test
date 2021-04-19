@@ -25,7 +25,7 @@ block content
                 p.error=err
             if(success)
                 p.success=success  
-            form(action="/auth/login" method="POST")
+            form(action="/auth/login" enctype="maltipart/form-data" method="POST")
               .form-group
                 input#input(name="username" type='text' required='required')
                 label.control-label(for='input') Username
@@ -52,11 +52,11 @@ block content
               a(href='#' title='') Take the tour
               |  or 
               a(href='#' title='') Join now
-               if(err)
+            if(err)
                 p.error=err
             if(success)
                 p.success=success
-            form(action="/auth/register"  method="POST")
+            form(action="/auth/register"  enctype="maltipart/form-data" method="POST")
               .form-group
                 input(name='fullName' type='text' required='required')
                 label.control-label(for='input') First &amp; Last Name
@@ -75,7 +75,6 @@ block content
                     input(type='radio' name='gender' value='M' checked='checked')
                     i.check-box
                     | Male
-                .radio
                   label
                     input(type='radio' name='gender' value='F')
                     i.check-box
@@ -85,6 +84,10 @@ block content
                 label.control-label(for='input')
                   a.__cf_email__(href='https://wpkixx.com/cdn-cgi/l/email-protection' data-cfemail='6c29010d05002c') [email&nbsp;protected]
                 i.mtrl-select
+              .form-group 
+                input(type='file' name='avatar' required='required')
+                label(for="avatar") your avatar
+                i.mtrl-select
               .checkbox
                 label
                   input(type='checkbox' checked='checked')
@@ -92,5 +95,5 @@ block content
                   | Accept Terms &amp; Conditions ?
               a.already-have(href='#' title='') Already have an account
               .submit-btns
-                button.mtr-btn.signup(type='button' value='Submit')
+                button.mtr-btn.signin(type='submit' value='Submit')
                   span Register

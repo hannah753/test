@@ -17,14 +17,12 @@ app.set("view engine","pug");
 app.use(cors());
 app.use(express.json());
 
-//const sequelizeConnection = require("./models/index");
 
 //static folders
 app.use(express.static(__dirname + '/public'));
 app.use(express.static("./covers"));
 app.use(express.static("./users"));
-app.use('/auth',express.static('public'));
-//app.use(express.static(__dirname + '/public'));
+app.use('/auth',express.static('public'))
 
 app.use((req,res,next)=>{
     //res.locals.token = storage.state.token;

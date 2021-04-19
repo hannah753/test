@@ -1,7 +1,8 @@
 const conn = require("../config/sequelizeConfig");
 const fs = require("fs");
 const bycrypt = require("bcrypt");
-const saltRounds =10;
+const userUpload = require("../libs/users");
+const saltRounds = 10;
 const {models} = require("../models/index");
 const jwt = require("jsonwebtoken");
 const storage = require("../libs/handyStorage");
@@ -17,32 +18,49 @@ const authController={
         if(conn.error){
             res.status(500);
         }else{
-            if(req.body.email==="" || req.body.password==="" || req.body.username===""){
-                res.status(500).render("./landing", {err : "PLease fill all the form elements"});
-            }else{
-                let hash = bycrypt.hashSync(req.body.password,saltRounds);
+            userUpload(req, res, (err) => {
 
-                //save the user
-                models.User.create({
-                   email: req.body.email,
-                   password : hash,
-                   gender: req.body.gender,
-                   username: req.body.username,
-                   fullName: req.body.fullName
-                }).then((user)=>{
-                    console.log(user);
-                    storage.setState({
-                        token:jwt.sign({user:req.body.email},"supersecretpassword", {expiresIn: '2hr'}),
-                        user:user.dataValues
-                    })
-                    res(status(201).redirect("/"));
-                }).catch(err=>{
-                    console.log(err);
-                    res.status(500).render("./landing",{
-                        err: 'there was an error : ${err}'
-                    })
-                })
-            }
+                if(err){
+                    res.status(500).render("./register", {err: 'Error Uploading image $(err)'});
+                }else{
+                    if(req.body.email==="" || req.body.password==="" || req.body.username===""){
+
+                        let avatarspPath = './users/avatars/${req.file.filename}';
+                        fs.unlinkSync(avatarsPath, (err)=>{
+                                if(err){
+                                    console.log('Error deleting ${req.file.filename}')
+                                }
+                        });
+                        res.status(500).render("./landing", {err : "PLease fill all the form elements"});
+                    }else{
+                        
+                        let hash = bycrypt.hashSync(req.body.password, saltRounds);
+
+                        //save the user
+                        models.User.create({
+                            email: req.body.email,
+                            password : req.body.password,
+                            gender: req.body.gender,
+                            username: req.body.username,
+                            fullName: req.body.fullName,
+                            avatarUrl: req.file.filename,
+                            avatarName: req.file.filename
+                        }).then((user)=>{
+                            console.log(user);
+                            storage.setState({
+                                token:jwt.sign({user:req.body.email},"supersecretpassword", {expiresIn: '2hr'}),
+                                user:user.dataValues
+                            })
+                            res(status(201).redire6ct("/"));
+                        }).catch(err=>{
+                            console.log(err);
+                            res.status(500).render("./landing",{
+                                err: 'there was an error : ${err}'
+                            })
+                        })
+                    }
+                }
+            });
         }
     },
     showLogin: (req, res)=>{

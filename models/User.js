@@ -18,6 +18,12 @@ module.exports=(sequelize, DataTypes)=>{
         email:{
             type:DataTypes.STRING
         },
+        avatarUrl:{
+            type:DataTypes.STRING
+        },
+        avatarName:{
+            type:DataTypes.STRING
+        }
     });
 
     return {name:"User", schema:User}
